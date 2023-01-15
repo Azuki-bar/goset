@@ -1,0 +1,22 @@
+run:
+  timeout: "3m"
+  issue-exit-code: 1
+  tests: true
+  skip-dirs-use-default: true
+  go: "1.19"
+
+linters:
+  disable-all: true
+  enable:
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - typecheck
+    - unused
+    - gosec
+    - forbidigo
+    - gocritic
+    - revive
+    - gofmt
